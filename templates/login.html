@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <title>Hello!!!</title>
+</head>
+<body>
+
+  <header>
+  </header>
+        <main>
+          <center>
+            <form class="" action="https://formspree.io/dima.posypajko@gmail.com" method="post">
+              <label>Your name: <input type="text" name="user-name"></label>
+              <br>
+              <label for="user-email">Tour email:
+              <input type="text" name="user-email">
+              </label>
+              <br>
+              <label>Tour gender</label>
+              <label>
+                <input type="radio" name="gender" value="male"> Male
+              </label><label>
+                <input type="radio" name="gender" value="famale"> famale
+              </label><label>
+                <input type="radio" name="gender" value="other"> Other
+              </label>
+              <br>
+              <input type="submit"  value="Submit">
+            </form>
+          </center>
+        </main>
+
+     <footer>
+         <p>Published <time datetime="2016-03-19">March 19, 2016</time></p>
+     </footer>
+  </body>
+
+</html>
