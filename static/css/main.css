@@ -1,0 +1,52 @@
+#sort-search div{
+  display:inline-block;
+  margin: 5px 5px 5px 10px;
+  margin-left: 0%;
+}
+
+.pager {
+  list-style: none;
+  margin: 20px;
+  padding: 0 30px;
+  width: 100%;
+  /* border-bottom: 4px solid silver; */
+}
+
+.pager-current,
+.pager-item,
+.pager-next {
+  display: inline-block;
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 30px;
+  margin-bottom: -4px;
+}
+.item-list{
+  margin-left: 30%;
+}
+.pager-next > a,
+.pager-item > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: darkred;
+}
+
+.pager-next > a:hover,
+.pager-item > a:hover {
+  background-color: #eee;
+  border-bottom: 4px solid gray;
+}
+
+.pager-current {
+  color: black;
+  background-color: silver;
+  border-bottom: 4px solid black;
+}
+
+.target {
+  margin-top: 50px;
+}

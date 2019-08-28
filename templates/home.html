@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+{% extends 'index.html'%}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/card.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+
+
+    <title>
+      {% block title %}
+        Multfilms
+      {% endblock %}
+    </title>
+</head>
+
+<body>
+  <main>
+    {% block content %}
+    <form id="sort-search">
+      <div id="sort">
+        <select>
+          <option label="Sort" value="1" selected>Sort</option>
+          <option>Date</option>
+          <option>Rating</option>
+          <option>Views</option>
+          <input id="sort" type="submit" value="Отправить" />
+        </select>
+      </div>
+      <div id="search">
+        <input type="search" name="q" placeholder="Search...">
+        <input type="submit" value="Найти">
+      </div>
+    </form>
+
+
+    <form class="search">
+
+    </form>
+
+    <div class="cards">
+      <div class="card">
+        <img src="static/Adams_small.jpg" alt="obfects" width="100%" height="60%" border-radius="25px">
+        <div class="container">
+          <h4><b>The Addams Family</b></h4>
+          <p>Год:	2019</p>
+          <a href="#">
+            More...
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="static/Tofu.jpg" alt="obfects" width="100%" height="70%">
+        <div class="container">
+          <h4><b>Tofu</b></h4>
+          <p>Год:	2017</p>
+          <a href="#">
+            More...
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="static/Missing_Link.jpg" alt="obfects" width="100%" height="70%">
+        <div class="container">
+          <h4><b>Missing Link</b></h4>
+          <p>Год: 2019</p>
+          <a href="#">
+            More...
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="static/Manou_the_Swift.jpg" alt="obfects" width="100%" height="70%">
+        <div class="container">
+          <h4><b>Manou the Swift</b></h4>
+          <p>Год: 2019</p>
+          <a href="#">
+            More...
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="static/Wonder_Park.jpg" alt="obfects" width="100%" height="70%">
+        <div class="container">
+          <h4><b>Wonder Park</b></h4>
+          <p>Год: 2019</p>
+          <a href="#">
+            More...
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="static/Stick_Man.jpg" alt="obfects" width="100%" height="70%">
+        <div class="container">
+          <h4><b>Stick Man</b></h4>
+          <p>Год: 2015</p>
+          <a href="#">
+            More...
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-list">
+      <ul class="pager">
+        <li class="pager-current first"><span>1</span></li>
+        <li class="pager-next"><a href="/node?page=1" title="На страницу номер 2">2</a></li>
+        <li class="pager-item"><a href="/node?page=2" title="На страницу номер 3">3</a></li>
+        <li class="pager-item"><a href="/node?page=3" title="На страницу номер 4">4</a></li>
+        <li class="pager-next last"><a href="/node?page=1" title="На следующую страницу">›</a></li>
+      </ul>
+    </div>
+
+    <div class="text-home">
+      A hundred years ago people believed that plants and animals had always been as they are now. They thought that all the different sorts of living things, including men and women, were put in this world by some mysterious power a few thousand years ago.
+      It was Charles Darwin, born at Shrewsbury on the 12th of February, 1809, who showed that this was just a legend. As a boy Darwin loved to walk in the countryside, collecting insects, flowers and minerals. He liked to watch his elder brother making chemical experiments. These hobbies interested him imuch more than Greek and Latin, which were his main subjects at school.
+    </div>
+    {% endblock %}
+
+
+    <!-- <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet
+          dolore magna aliguam erat volutpat</h5>
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">Ut wisis enim ad minim veniam, quis nostrud
+            exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex
+            ea commodo consequat.</h5>
+          </div>
+          <img src="static/tiger.jpg" alt="tiger" width="500" height="350">
+          <div class="card-body">
+            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetuer
+              adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet
+              dolore magna aliguam erat volutpat Ut wisis enim ad minim veniam, quis nostrud
+              exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex
+              ea commodo consequat.</h5>
+            </div>
+          </div>
+          <figure>
+            <img class="d-block w-100" src="static/rabstol_net_madagascar3_05.jpg" alt="Monsters" width="500" height="500">
+            <img src="static/THUMB-Monsters.png" alt="Madagascar3" width="600" height="500">
+            <figcaption> this is anythink text</figcaption>
+          </figure>
+
+          <body>
+            <video src="static/Final_Fantasy.mp4" width="500" height="350" controls></video>
+          </body> -->
+
+</main>
+
+</body>
+     <!-- <footer id="my-footer">
+       <div>
+         Information about the site: <a href="#">https://google.com/sdas/da/da/sda/sda/sdas</a>
+       </div>
+        <div>
+          Website Developer: <a href="#">https://www.facebook.com/profile.php?id=100015327756916</a>
+        </div>
+
+     </footer> -->
+
+</html>

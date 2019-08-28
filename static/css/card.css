@@ -1,0 +1,31 @@
+
+.cards {
+  width: 100%;
+}
+
+.card {
+  display:inline-block;
+  width: 20%;
+  margin: 5px, 5px, 5px, 10px;
+  border-radius: 25px;
+}
+.card img{
+  height: 350px; /* Высота блока */
+  border-radius: 25px;
+  border-radius: 10px;
+  border: 2px #ccc solid;
+}
+
+.card:hover {
+    /* display: inline; */
+    margin-right: 5px; /* Отступ слева */
+    border: 0px solid #000; /* Рамка вокруг текста */
+    padding: 3px;
+}
+
+.container {
+    padding: 2px 16px;
+}
+.container h4{
+  text-align: center;
+}

@@ -8,9 +8,9 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 
 
-def index(request):
+def home(request):
     context = {}
-    return render(request, 'index.html', context)
+    return render(request, 'home.html', context)
 
 
 def login(request):

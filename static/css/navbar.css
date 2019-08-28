@@ -1,9 +1,33 @@
-body {margin:0;}
+/* body {margin:0;}
+h1{
+  color: #414174;
+  text-align: center;
+  font-family: CURSIVE, sans-serif;
+}
+p{
+
+}
+#chousen{
+  color: #414174;
+
+}
+.anderline{
+  color: #d6d6d6;
+}
+div p{
+  color: #414174;
+  font-family: CURSIVE, sans-serif;
+  width:20%; /* you can use % */
+  /* height: auto;
+  border: 1px solid black;
+  text-align: center; */
+
+/* }
 h2 {
   font-family: monospace;
-  color: #606060;
-}
-ul {
+  color: #414174;
+} */
+/* ul {
   list-style: none;
   margin: 0 auto;
 }
@@ -14,28 +38,50 @@ a {
 }
 i {
   margin-right: 10px;
+} */
+header {
+  /* border: 1px solid black; */
+}
+.label {
+  margin-left: 20px;
+  float: left;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 26px;
+  text-shadow: 0 1px 0 white;
+  color: #373e47;
+  /* border: 1px solid black; */
 }
 nav {
   display: block;
-  width: 660px;
-  margin: 0 auto 30px;
+  /* width: 380px; */
+  /* margin: 0 auto 30px; */
+  margin-left:70%;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 1px 0 white;
+  /* border: 1px solid black; */
 }
+
+
+
 .one ul {
   padding: 1em 0;
-  background: #ECDAD6;
+  color: #414174;
+  text-align: center;
+  font-size: 100%;
+  font-family: CURSIVE, sans-serif;
+  /* border: 1px solid black; */
+  /* background: #414174; */
 }
 .one a {
   padding: 1em;
-  background: rgba(177, 152, 145, .3);
-  border-right: 1px solid #b19891;
-  color: #695753;
+  /* background: rgba(177, 152, 145, .3);
+  border-right: 1px solid #b19891; */
+  color: #4d576b;
+
 }
-.one a:hover {background: #b19891;}
+/* .one a:hover {background: #b19891;} */
 .one li {
   display: inline;
-}
-
-div {
-    margin: 7px; /* Значение отступов */
-
 }
